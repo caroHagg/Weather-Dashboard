@@ -59,7 +59,7 @@ function readLocalStorage(){
 //call to the weather API to get info for current weather and forecast 
 function getLatandLon(cityName){
    
-    var requestLatURL = 'http://api.openweathermap.org/geo/1.0/direct?q='+cityName+',US&limit=1&appid=f47e6a19d6e4c6e6b84b56bae2fdf11f'
+    var requestLatURL = 'https://api.openweathermap.org/geo/1.0/direct?q='+cityName+',US&limit=1&appid=f47e6a19d6e4c6e6b84b56bae2fdf11f'
 
 //fetch for latitude and longitude of city selected 
     fetch(requestLatURL)
@@ -70,7 +70,7 @@ function getLatandLon(cityName){
         var latCity = data[0].lat;
         var lonCity = data[0].lon;
         //give lat and lon to forecast api and current weather api
-        var forecastRequest = 'http://api.openweathermap.org/data/2.5/forecast?lat='+latCity+'&lon='+lonCity+'&units=imperial&appid=f47e6a19d6e4c6e6b84b56bae2fdf11f';
+        var forecastRequest = 'https://api.openweathermap.org/data/2.5/forecast?lat='+latCity+'&lon='+lonCity+'&units=imperial&appid=f47e6a19d6e4c6e6b84b56bae2fdf11f';
         var currentWeather ='https://api.openweathermap.org/data/2.5/weather?lat='+latCity+'&lon='+lonCity+'&units=imperial&appid=f47e6a19d6e4c6e6b84b56bae2fdf11f';
 
         // fetche current weather
