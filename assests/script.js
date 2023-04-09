@@ -84,7 +84,6 @@ function getLatandLon(cityName){
 
             currentDayEl.children('h3').text(currentData.name);
             currentDayEl.children('h3').append(currentDate);
-            console.log(currentData.weather.length);
             //if more than one icon 
             if(currentData.weather.length > 0 ){
                 for(var i=0; i < currentData.weather.length; i++){
