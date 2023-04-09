@@ -1,0 +1,30 @@
+:root{
+    /* color palette from palettes.shecodes.io/palettes/1313 */
+    --bgcolormain :#142d4c;
+    --bgcolorsecond:#385170;
+    --btnsearch: #9fd3c7;
+    --btnhistory: #ececec;
+}
+
+header{
+    background-color: var(--bgcolormain);
+    color:var(--btnhistory)
+}
+.btn-search{
+    background-color:var(--btnsearch);
+    color: var(--btnhistory);
+    
+}
+.btn-history{
+    background-color: var(--btnhistory);
+}
+#current-day{
+    visibility: hidden;
+}
+#search-history-screen {
+    visibility: hidden;
+}
+
+#five-day-display-main{
+    visibility: hidden;
+}
